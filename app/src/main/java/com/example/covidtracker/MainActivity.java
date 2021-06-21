@@ -2,6 +2,7 @@ package com.example.covidtracker;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -62,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
 
         ApiUtilities.getApiInterface().getCountryData()
                 .enqueue(new Callback<List<CountryData>>() {
+                    @SuppressLint("SetTextI18n")
                     @Override
                     public void onResponse(Call<List<CountryData>> call, Response<List<CountryData>> response) {
 
@@ -89,9 +91,9 @@ public class MainActivity extends AppCompatActivity {
                                 totalDeath.setText(NumberFormat.getInstance().format(death));
                                 totalTests.setText(NumberFormat.getInstance().format(totalsTest));
 
-                                todayConfirm.setText(NumberFormat.getInstance().format(todayCases));
-                                todayDeath.setText(NumberFormat.getInstance().format(todayDeaths));
-                                todayRecovered.setText(NumberFormat.getInstance().format(todayRecover));
+                                todayConfirm.setText("+" + NumberFormat.getInstance().format(todayCases));
+                                todayDeath.setText("+" + NumberFormat.getInstance().format(todayDeaths));
+                                todayRecovered.setText("+" + NumberFormat.getInstance().format(todayRecover));
 
 
 

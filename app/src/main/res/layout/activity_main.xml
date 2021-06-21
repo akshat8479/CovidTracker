@@ -277,8 +277,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@string/bold"
-                        android:text="(+355)"
-                        android:textColor="@color/black"
+                        android:text="(+588)"
+                        android:textColor="@color/yellow"
                         android:layout_marginTop="7dp"
                         android:textSize="@dimen/text_size" />
 
@@ -370,9 +370,9 @@
                         android:orientation="horizontal">
 
                         <View
-                            android:layout_width="15dp"
-                            android:layout_height="15dp"
-                            android:background="@color/green_pie"/>
+                            android:layout_width="11dp"
+                            android:layout_height="7dp"
+                            android:background="@color/green_pie" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -402,7 +402,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@string/bold"
                         android:text="(+355)"
-                        android:textColor="@color/black"
+                        android:textColor="@color/green_pie"
                         android:layout_marginTop="7dp"
                         android:textSize="@dimen/text_size" />
 
@@ -464,8 +464,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@string/bold"
-                        android:text="(+355)"
-                        android:textColor="@color/black"
+                        android:text="(+98)"
+                        android:textColor="@color/red_pie"
                         android:layout_marginTop="7dp"
                         android:textSize="@dimen/text_size" />
 
